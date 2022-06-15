@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai4</title>
+</head>
+<body>
+
+</body>
+  <script>
+    let tv = ["mot", "hai", "ba"];
+    let ta = ["one", "two", "three"];
+    let value =  prompt("Moi ban nhap vao tu muon dich");
+    let index=-1;
+    for (let i = 0; i < tv.length; i++) {
+      if (tv[i]==value){
+        index = i;
+        break
+      }
+    }
+    if(index == -1){
+      alert("khong tim thay");
+    }
+    else {
+      alert("tu " + value + " co nghia la " + ta[index]);
+    }
+  </script>
+</html>
